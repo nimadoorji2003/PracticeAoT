@@ -1,0 +1,1575 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Products | Hyper - Responsive Bootstrap 5 Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      content="A fully featured admin theme which can be used to build CRM, CMS, etc."
+      name="description"
+    />
+    <meta content="Coderthemes" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+    <!-- third party css -->
+    <link
+      href="assets/css/vendor/dataTables.bootstrap5.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/vendor/responsive.bootstrap5.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- third party css end -->
+
+    <!-- App css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="assets/css/app.min.css"
+      rel="stylesheet"
+      type="text/css"
+      id="light-style"
+    />
+    <link
+      href="assets/css/app-dark.min.css"
+      rel="stylesheet"
+      type="text/css"
+      id="dark-style"
+    />
+  </head>
+
+  <body
+    class="loading"
+    data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'
+  >
+    <!-- Begin page -->
+    <div class="wrapper">
+      <!-- Left Sidebar Start -->
+      <div class="leftside-menu">
+        <!-- LOGO -->
+        <a href="index.html" class="logo text-center logo-light">
+          <span class="logo-lg">
+            <img src="assets/images/logo.png" alt="" height="16" />
+          </span>
+          <span class="logo-sm">
+            <img src="assets/images/logo_sm.png" alt="" height="16" />
+          </span>
+        </a>
+
+        <!-- LOGO -->
+        <a href="index.html" class="logo text-center logo-dark">
+          <span class="logo-lg">
+            <img src="assets/images/logo-dark.png" alt="" height="16" />
+          </span>
+          <span class="logo-sm">
+            <img src="assets/images/logo_sm_dark.png" alt="" height="16" />
+          </span>
+        </a>
+
+        <div class="h-100" id="leftside-menu-container" data-simplebar="">
+          <!--- Sidemenu -->
+          <ul class="side-nav">
+            <li class="side-nav-item">
+              <a
+                data-bs-toggle="collapse"
+                href="#sidebarDashboards"
+                aria-expanded="false"
+                aria-controls="sidebarDashboards"
+                class="side-nav-link"
+              >
+                <i class="uil-home-alt"></i>
+                <span class="menu-arrow"></span>
+                <span> Dashboards </span>
+              </a>
+              <div class="collapse" id="sidebarDashboards">
+                <ul class="side-nav-second-level">
+                  <li>
+                    <a href="index.html">Ecommerce</a>
+                  </li>
+                  <li>
+                    <a href="dashboard-projects.html">Projects</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="side-nav-item">
+              <a href="apps-calendar.html" class="side-nav-link">
+                <i class="uil-calender"></i>
+                <span> Calendar </span>
+              </a>
+            </li>
+
+            <li class="side-nav-item">
+              <a
+                data-bs-toggle="collapse"
+                href="#sidebarEcommerce"
+                aria-expanded="false"
+                aria-controls="sidebarEcommerce"
+                class="side-nav-link"
+              >
+                <i class="uil-store"></i>
+                <span> Ecommerce </span>
+                <span class="menu-arrow"></span>
+              </a>
+              <div class="collapse" id="sidebarEcommerce">
+                <ul class="side-nav-second-level">
+                  <li>
+                    <a href="apps-ecommerce-products.html">Products</a>
+                  </li>
+                  <li>
+                    <a href="apps-ecommerce-customers.html">Customers</a>
+                  </li>
+                  <li>
+                    <a href="apps-ecommerce-sellers.html">Sellers</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="side-nav-item">
+              <a
+                data-bs-toggle="collapse"
+                href="#sidebarProjects"
+                aria-expanded="false"
+                aria-controls="sidebarProjects"
+                class="side-nav-link"
+              >
+                <i class="uil-briefcase"></i>
+                <span> Projects </span>
+                <span class="menu-arrow"></span>
+              </a>
+              <div class="collapse" id="sidebarProjects">
+                <ul class="side-nav-second-level">
+                  <li>
+                    <a href="apps-projects-list.html">List</a>
+                  </li>
+                  <li>
+                    <a href="apps-projects-details.html">Details</a>
+                  </li>
+                  <li>
+                    <a href="apps-projects-add.html"
+                      >Create Project
+                      <span
+                        class="badge rounded-pill badge-success-lighten font-10 float-end"
+                        >New</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="side-nav-item">
+              <a
+                data-bs-toggle="collapse"
+                href="#sidebarTasks"
+                aria-expanded="false"
+                aria-controls="sidebarTasks"
+                class="side-nav-link"
+              >
+                <i class="uil-clipboard-alt"></i>
+                <span> Staff Tasks </span>
+                <span class="menu-arrow"></span>
+              </a>
+              <div class="collapse" id="sidebarTasks">
+                <ul class="side-nav-second-level">
+                  <li>
+                    <a href="apps-tasks.html">List</a>
+                  </li>
+                  <li>
+                    <a href="apps-tasks-details.html">Details</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="side-nav-item">
+              <a
+                data-bs-toggle="collapse"
+                href="#sidebarTables"
+                aria-expanded="false"
+                aria-controls="sidebarTables"
+                class="side-nav-link"
+              >
+                <i class="uil-table"></i>
+                <span> Staff Tour </span>
+                <span class="menu-arrow"></span>
+              </a>
+              <div class="collapse" id="sidebarTables">
+                <ul class="side-nav-second-level">
+                  <li>
+                    <a href="tables-basic.html"> Main Staff</a>
+                  </li>
+                  <li>
+                    <a href="tables-datatable.html">All Staff</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="side-nav-item">
+              <a
+                data-bs-toggle="collapse"
+                href="#sidebarPages"
+                aria-expanded="false"
+                aria-controls="sidebarPages"
+                class="side-nav-link"
+              >
+                <i class="uil-copy-alt"></i>
+                <span> Forms </span>
+                <span class="menu-arrow"></span>
+              </a>
+              <div class="collapse" id="sidebarPages">
+                <ul class="side-nav-second-level">
+                  <li>
+                    <a href="pages-leave.html">Leave Application Form</a>
+                  </li>
+                  <li>
+                    <a href="pages-promotion.html">Promotion Form</a>
+                  </li>
+                  <li>
+                    <a href="pages-resignation.html">Resignation Form</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="side-nav-item">
+              <a href="pages-faq.html" class="side-nav-link">
+                <i class="uil-comment-question"></i>
+                <span> FAQ </span>
+              </a>
+            </li>
+
+            <li class="side-nav-item">
+              <a
+                data-bs-toggle="collapse"
+                href="#sidebarExtendedUI"
+                aria-expanded="false"
+                aria-controls="sidebarExtendedUI"
+                class="side-nav-link"
+              >
+                <i class="uil-package"></i>
+                <span> Help Center </span>
+                <span class="menu-arrow"></span>
+              </a>
+              <div class="collapse" id="sidebarExtendedUI">
+                <ul class="side-nav-second-level">
+                  <li>
+                    <a href="pages-company-policy.html">Company Policy</a>
+                  </li>
+                  <li>
+                    <a href="pages-need-help.html">Need Help</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <!-- End Sidebar -->
+
+          <div class="clearfix"></div>
+        </div>
+        <!-- Sidebar -left -->
+      </div>
+      <!-- Left Sidebar End -->
+
+      <!-- Start Page Content here -->
+      <div class="content-page">
+        <div class="content">
+          <!-- Topbar Start -->
+          <div class="navbar-custom">
+            <ul class="list-unstyled topbar-menu float-end mb-0">
+              <li class="dropdown notification-list d-lg-none">
+                <a
+                  class="nav-link dropdown-toggle arrow-none"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-haspopup="false"
+                  aria-expanded="false"
+                >
+                  <i class="dripicons-search noti-icon"></i>
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu-animated dropdown-lg p-0"
+                >
+                  <form class="p-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Search ..."
+                      aria-label="Recipient's username"
+                    />
+                  </form>
+                </div>
+              </li>
+
+              <li class="dropdown notification-list">
+                <a
+                  class="nav-link dropdown-toggle arrow-none"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-haspopup="false"
+                  aria-expanded="false"
+                >
+                  <i class="dripicons-bell noti-icon"></i>
+                  <span class="noti-icon-badge"></span>
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu-end dropdown-menu-animated dropdown-lg"
+                >
+                  <!-- item-->
+                  <div class="dropdown-item noti-title">
+                    <h5 class="m-0">
+                      <span class="float-end">
+                        <a href="javascript: void(0);" class="text-dark">
+                          <small>Clear All</small>
+                        </a> </span
+                      >Notification
+                    </h5>
+                  </div>
+
+                  <div style="max-height: 230px" data-simplebar="">
+                    <!-- item-->
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item notify-item"
+                    >
+                      <div class="notify-icon bg-primary">
+                        <i class="mdi mdi-comment-account-outline"></i>
+                      </div>
+                      <p class="notify-details">
+                        Sonam Dorji commented on Admin
+                        <small class="text-muted">1 min ago</small>
+                      </p>
+                    </a>
+
+                    <!-- item-->
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item notify-item"
+                    >
+                      <div class="notify-icon bg-info">
+                        <i class="mdi mdi-account-plus"></i>
+                      </div>
+                      <p class="notify-details">
+                        New user registered.
+                        <small class="text-muted">5 hours ago</small>
+                      </p>
+                    </a>
+
+                    <!-- item-->
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item notify-item"
+                    >
+                      <div class="notify-icon">
+                        <img
+                          src="boy.png"
+                          class="img-fluid rounded-circle"
+                          alt=""
+                        />
+                      </div>
+                      <p class="notify-details">Dawa</p>
+                      <p class="text-muted mb-0 user-msg">
+                        <small
+                          >Hi, How are you? What about our next meeting</small
+                        >
+                      </p>
+                    </a>
+
+                    <!-- item-->
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item notify-item"
+                    >
+                      <div class="notify-icon bg-primary">
+                        <i class="mdi mdi-comment-account-outline"></i>
+                      </div>
+                      <p class="notify-details">
+                        Karma commented on Admin
+                        <small class="text-muted">4 days ago</small>
+                      </p>
+                    </a>
+
+                    <!-- item-->
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item notify-item"
+                    >
+                      <div class="notify-icon">
+                        <img
+                          src="girl.png"
+                          class="img-fluid rounded-circle"
+                          alt=""
+                        />
+                      </div>
+                      <p class="notify-details">Tenzin Choden</p>
+                      <p class="text-muted mb-0 user-msg">
+                        <small>Wow ! your goods are awesome</small>
+                      </p>
+                    </a>
+
+                    <!-- item-->
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item notify-item"
+                    >
+                      <div class="notify-icon bg-info">
+                        <i class="mdi mdi-heart"></i>
+                      </div>
+                      <p class="notify-details">
+                        Pema liked
+                        <b>Admin</b>
+                        <small class="text-muted">13 days ago</small>
+                      </p>
+                    </a>
+                  </div>
+                  <!-- All-->
+                  <a
+                    href="javascript:void(0);"
+                    class="dropdown-item text-center text-primary notify-item notify-all"
+                  >
+                    View All
+                  </a>
+                </div>
+              </li>
+
+              <li class="notification-list">
+                <a class="nav-link end-bar-toggle" href="javascript: void(0);">
+                  <i class="dripicons-gear noti-icon"></i>
+                </a>
+              </li>
+
+              <li class="dropdown notification-list">
+                <a
+                  class="nav-link dropdown-toggle nav-user arrow-none me-0"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-haspopup="false"
+                  aria-expanded="false"
+                >
+                  <span class="account-user-avatar">
+                    <img
+                      src="boy.png"
+                      alt="user-image"
+                      class="rounded-circle"
+                    />
+                  </span>
+                  <span>
+                    <span class="account-user-name">Rinchen Dawa</span>
+                    <span class="account-position">Founder</span>
+                  </span>
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown"
+                >
+                  <!-- item-->
+                  <div class="dropdown-header noti-title">
+                    <h6 class="text-overflow m-0">Welcome !</h6>
+                  </div>
+
+                  <!-- item-->
+                  <a
+                    href="pages-profile.html"
+                    class="dropdown-item notify-item"
+                  >
+                    <i class="mdi mdi-account-circle me-1"></i>
+                    <span>My Account</span>
+                  </a>
+
+                  <!-- item-->
+                  <a
+                    href="pages-profile.html"
+                    class="dropdown-item notify-item"
+                  >
+                    <i class="mdi mdi-account-edit me-1"></i>
+                    <span>Settings</span>
+                  </a>
+
+                  <!-- item-->
+                  <a href="pages-logout.html" class="dropdown-item notify-item">
+                    <i class="mdi mdi-logout me-1"></i>
+                    <span>Logout</span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+            <button class="button-menu-mobile open-left">
+              <i class="mdi mdi-menu"></i>
+            </button>
+            <div class="app-search dropdown d-none d-lg-block">
+              <form>
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control dropdown-toggle"
+                    placeholder="Search..."
+                    id="top-search"
+                  />
+                  <span class="mdi mdi-magnify search-icon"></span>
+                  <button class="input-group-text btn-primary" type="submit">
+                    Search
+                  </button>
+                </div>
+              </form>
+
+              <div
+                class="dropdown-menu dropdown-menu-animated dropdown-lg"
+                id="search-dropdown"
+              ></div>
+            </div>
+          </div>
+          <!-- end Topbar -->
+
+          <!-- Start Content-->
+          <div class="container-fluid">
+            <!-- start page title -->
+            <div class="row">
+              <div class="col-12">
+                <div class="page-title-box">
+                  <div class="page-title-right">
+                    <ol class="breadcrumb m-0">
+                      <li class="breadcrumb-item">
+                        <a href="javascript: void(0);">Hyper</a>
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a href="javascript: void(0);">eCommerce</a>
+                      </li>
+                      <li class="breadcrumb-item active">Products</li>
+                    </ol>
+                  </div>
+                  <h4 class="page-title">Products</h4>
+                </div>
+              </div>
+            </div>
+            <!-- end page title -->
+
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row mb-2">
+                      <div class="col-sm-4">
+                        <a
+                          href="javascript:void(0);"
+                          class="btn btn-danger mb-2"
+                          ><i class="mdi mdi-plus-circle me-2"></i> Add
+                          Products</a
+                        >
+                      </div>
+                      <div class="col-sm-8">
+                        <div class="text-sm-end">
+                          <button
+                            type="button"
+                            class="btn btn-success mb-2 me-1"
+                          >
+                            <i class="mdi mdi-cog-outline"></i>
+                          </button>
+                          <button type="button" class="btn btn-light mb-2 me-1">
+                            Import
+                          </button>
+                          <button type="button" class="btn btn-light mb-2">
+                            Export
+                          </button>
+                        </div>
+                      </div>
+                      <!-- end col-->
+                    </div>
+
+                    <div class="table-responsive">
+                      <table
+                        class="table table-centered w-100 dt-responsive nowrap"
+                        id="products-datatable"
+                      >
+                        <thead class="table-light">
+                          <tr>
+                            <th class="all" style="width: 20px">
+                              <div class="form-check">
+                                <input
+                                  type="checkbox"
+                                  class="form-check-input"
+                                  id="customCheck1"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="customCheck1"
+                                  >&nbsp;</label
+                                >
+                              </div>
+                            </th>
+                            <th class="all">Product</th>
+                            <th>Category</th>
+                            <th>Added Date</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Status</th>
+                            <th style="width: 85px">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <input
+                                  type="checkbox"
+                                  class="form-check-input"
+                                  id="customCheck2"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="customCheck2"
+                                  >&nbsp;</label
+                                >
+                              </div>
+                            </td>
+                            <td>
+                              <img
+                                src="apple1.webp"
+                                alt="contact-img"
+                                title="contact-img"
+                                class="rounded me-3"
+                                height="48"
+                              />
+                              <p
+                                class="m-0 d-inline-block align-middle font-16"
+                              >
+                                <a
+                                  href="apps-ecommerce-products-details.html"
+                                  class="text-body"
+                                  >Apple Macbook Pro(14-inch)</a
+                                >
+                                <br />
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                              </p>
+                            </td>
+                            <td>Apple</td>
+                            <td>09/12/2018</td>
+                            <td>Nu.150,000/-</td>
+
+                            <td>254</td>
+                            <td>
+                              <span class="badge bg-success">Active</span>
+                            </td>
+
+                            <td class="table-action">
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-eye"></i
+                              ></a>
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-square-edit-outline"></i
+                              ></a>
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-delete"></i
+                              ></a>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <input
+                                  type="checkbox"
+                                  class="form-check-input"
+                                  id="customCheck3"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="customCheck3"
+                                  >&nbsp;</label
+                                >
+                              </div>
+                            </td>
+                            <td>
+                              <img
+                                src="dell.avif"
+                                alt="contact-img"
+                                title="contact-img"
+                                class="rounded me-3"
+                                height="48"
+                              />
+                              <p
+                                class="m-0 d-inline-block align-middle font-16"
+                              >
+                                <a
+                                  href="apps-ecommerce-products-details.html"
+                                  class="text-body"
+                                  >XPS Laptops & 2-in-1 PCs</a
+                                >
+                                <br />
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span
+                                  class="text-warning mdi mdi-star-half"
+                                ></span>
+                              </p>
+                            </td>
+                            <td>Dell</td>
+                            <td>09/08/2018</td>
+                            <td>Nu.1,04,989/-</td>
+
+                            <td>1,874</td>
+                            <td>
+                              <span class="badge bg-success">Active</span>
+                            </td>
+                            <td class="table-action">
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-eye"></i
+                              ></a>
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-square-edit-outline"></i
+                              ></a>
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-delete"></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <input
+                                  type="checkbox"
+                                  class="form-check-input"
+                                  id="customCheck4"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="customCheck4"
+                                  >&nbsp;</label
+                                >
+                              </div>
+                            </td>
+                            <td>
+                              <img
+                                src="appwatch.webp"
+                                alt="contact-img"
+                                title="contact-img"
+                                class="rounded me-3"
+                                height="48"
+                              />
+                              <p
+                                class="m-0 d-inline-block align-middle font-16"
+                              >
+                                <a
+                                  href="apps-ecommerce-products-details.html"
+                                  class="text-body"
+                                  >Apple Watch Series 7</a
+                                >
+                                <br />
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span
+                                  class="text-warning mdi mdi-star-outline"
+                                ></span>
+                              </p>
+                            </td>
+                            <td>Apple Watch</td>
+                            <td>09/05/2018</td>
+                            <td>Nu.25,000/-</td>
+
+                            <td>2,541</td>
+                            <td>
+                              <span class="badge bg-success">Active</span>
+                            </td>
+
+                            <td class="table-action">
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-eye"></i
+                              ></a>
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-square-edit-outline"></i
+                              ></a>
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-delete"></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <input
+                                  type="checkbox"
+                                  class="form-check-input"
+                                  id="customCheck5"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="customCheck5"
+                                  >&nbsp;</label
+                                >
+                              </div>
+                            </td>
+                            <td>
+                              <img
+                                src="mouse.png"
+                                alt="contact-img"
+                                title="contact-img"
+                                class="rounded me-3"
+                                height="48"
+                              />
+                              <p
+                                class="m-0 d-inline-block align-middle font-16"
+                              >
+                                <a
+                                  href="apps-ecommerce-products-details.html"
+                                  class="text-body"
+                                  >EVGA X17 Gaming Mouse</a
+                                >
+                                <br />
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span
+                                  class="text-warning mdi mdi-star-half"
+                                ></span>
+                                <span
+                                  class="text-warning mdi mdi-star-outline"
+                                ></span>
+                              </p>
+                            </td>
+                            <td>X17</td>
+                            <td>08/23/2018</td>
+                            <td>Nu.6,000/-</td>
+
+                            <td>3,540</td>
+                            <td>
+                              <span class="badge bg-success">Active</span>
+                            </td>
+
+                            <td class="table-action">
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-eye"></i
+                              ></a>
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-square-edit-outline"></i
+                              ></a>
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-delete"></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <input
+                                  type="checkbox"
+                                  class="form-check-input"
+                                  id="customCheck6"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="customCheck6"
+                                  >&nbsp;</label
+                                >
+                              </div>
+                            </td>
+                            <td>
+                              <img
+                                src="14promax.jpg"
+                                alt="contact-img"
+                                title="contact-img"
+                                class="rounded me-3"
+                                height="48"
+                              />
+                              <p
+                                class="m-0 d-inline-block align-middle font-16"
+                              >
+                                <a
+                                  href="apps-ecommerce-products-details.html"
+                                  class="text-body"
+                                  >Iphone 14 Pro Max</a
+                                >
+                                <br />
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                              </p>
+                            </td>
+                            <td>Apple</td>
+                            <td>08/02/2018</td>
+                            <td>Nu.125,000/-</td>
+
+                            <td>26</td>
+                            <td>
+                              <span class="badge bg-success">Active</span>
+                            </td>
+
+                            <td class="table-action">
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-eye"></i
+                              ></a>
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-square-edit-outline"></i
+                              ></a>
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-delete"></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <input
+                                  type="checkbox"
+                                  class="form-check-input"
+                                  id="customCheck7"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="customCheck7"
+                                  >&nbsp;</label
+                                >
+                              </div>
+                            </td>
+                            <td>
+                              <img
+                                src="samsung.webp"
+                                alt="contact-img"
+                                title="contact-img"
+                                class="rounded me-3"
+                                height="48"
+                              />
+                              <p
+                                class="m-0 d-inline-block align-middle font-16"
+                              >
+                                <a
+                                  href="apps-ecommerce-products-details.html"
+                                  class="text-body"
+                                  >Samsung Galaxy S22 Ultra</a
+                                >
+                                <br />
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span
+                                  class="text-warning mdi mdi-star-half"
+                                ></span>
+                              </p>
+                            </td>
+                            <td>Samsung</td>
+                            <td>07/15/2018</td>
+                            <td>Nu.100,999/-</td>
+
+                            <td>485</td>
+                            <td>
+                              <span class="badge bg-danger">Deactive</span>
+                            </td>
+
+                            <td class="table-action">
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-eye"></i
+                              ></a>
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-square-edit-outline"></i
+                              ></a>
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-delete"></i
+                              ></a>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <input
+                                  type="checkbox"
+                                  class="form-check-input"
+                                  id="customCheck8"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="customCheck8"
+                                  >&nbsp;</label
+                                >
+                              </div>
+                            </td>
+                            <td>
+                              <img
+                                src="asus.webp"
+                                alt="contact-img"
+                                title="contact-img"
+                                class="rounded me-3"
+                                height="48"
+                              />
+                              <p
+                                class="m-0 d-inline-block align-middle font-16"
+                              >
+                                <a
+                                  href="apps-ecommerce-products-details.html"
+                                  class="text-body"
+                                  >ASUS ROG Strix G15 15.6"</a
+                                >
+                                <br />
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                              </p>
+                            </td>
+                            <td>Asus</td>
+                            <td>07/07/2018</td>
+                            <td>Nu.1,35,590/-</td>
+
+                            <td>652</td>
+                            <td>
+                              <span class="badge bg-success">Active</span>
+                            </td>
+
+                            <td class="table-action">
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-eye"></i
+                              ></a>
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-square-edit-outline"></i
+                              ></a>
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-delete"></i
+                              ></a>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <input
+                                  type="checkbox"
+                                  class="form-check-input"
+                                  id="customCheck9"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="customCheck9"
+                                  >&nbsp;</label
+                                >
+                              </div>
+                            </td>
+                            <td>
+                              <img
+                                src="airbud.jpg"
+                                alt="contact-img"
+                                title="contact-img"
+                                class="rounded me-3"
+                                height="48"
+                              />
+                              <p
+                                class="m-0 d-inline-block align-middle font-16"
+                              >
+                                <a
+                                  href="apps-ecommerce-products-details.html"
+                                  class="text-body"
+                                  >AirPots(3rd Genaration)</a
+                                >
+                                <br />
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                              </p>
+                            </td>
+                            <td>Apple</td>
+                            <td>06/30/2018</td>
+                            <td>Nu.20,000/-</td>
+
+                            <td>1,021</td>
+                            <td>
+                              <span class="badge bg-danger">Deactive</span>
+                            </td>
+                            <td class="table-action">
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-eye"></i
+                              ></a>
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-square-edit-outline"></i
+                              ></a>
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-delete"></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <input
+                                  type="checkbox"
+                                  class="form-check-input"
+                                  id="customCheck10"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="customCheck10"
+                                  >&nbsp;</label
+                                >
+                              </div>
+                            </td>
+                            <td>
+                              <img
+                                src="headphone.png"
+                                alt="contact-img"
+                                title="contact-img"
+                                class="rounded me-3"
+                                height="48"
+                              />
+                              <p
+                                class="m-0 d-inline-block align-middle font-16"
+                              >
+                                <a
+                                  href="apps-ecommerce-products-details.html"
+                                  class="text-body"
+                                  >Razer BlackShark V2 Special Edition</a
+                                >
+                                <br />
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span
+                                  class="text-warning mdi mdi-star-half"
+                                ></span>
+                              </p>
+                            </td>
+                            <td>Razer</td>
+                            <td>06/19/2018</td>
+                            <td>Nu.8200/-</td>
+
+                            <td>874</td>
+                            <td>
+                              <span class="badge bg-success">Active</span>
+                            </td>
+
+                            <td class="table-action">
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-eye"></i
+                              ></a>
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-square-edit-outline"></i
+                              ></a>
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-delete"></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <input
+                                  type="checkbox"
+                                  class="form-check-input"
+                                  id="customCheck11"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="customCheck11"
+                                  >&nbsp;</label
+                                >
+                              </div>
+                            </td>
+                            <td>
+                              <img
+                                src="mic.jpg"
+                                alt="contact-img"
+                                title="contact-img"
+                                class="rounded me-3"
+                                height="48"
+                              />
+                              <p
+                                class="m-0 d-inline-block align-middle font-16"
+                              >
+                                <a
+                                  href="apps-ecommerce-products-details.html"
+                                  class="text-body"
+                                  >Rode NT1-A</a
+                                >
+                                <br />
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span
+                                  class="text-warning mdi mdi-star-half"
+                                ></span>
+                              </p>
+                            </td>
+                            <td>Rode</td>
+                            <td>05/06/2018</td>
+                            <td>Nu.8000/-</td>
+
+                            <td>1,254</td>
+                            <td>
+                              <span class="badge bg-success">Active</span>
+                            </td>
+
+                            <td class="table-action">
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-eye"></i
+                              ></a>
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-square-edit-outline"></i
+                              ></a>
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-delete"></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <input
+                                  type="checkbox"
+                                  class="form-check-input"
+                                  id="customCheck12"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="customCheck12"
+                                  >&nbsp;</label
+                                >
+                              </div>
+                            </td>
+                            <td>
+                              <img
+                                src="earphone.jpg"
+                                alt="contact-img"
+                                title="contact-img"
+                                class="rounded me-3"
+                                height="48"
+                              />
+                              <p
+                                class="m-0 d-inline-block align-middle font-16"
+                              >
+                                <a
+                                  href="apps-ecommerce-products-details.html"
+                                  class="text-body"
+                                  >1PCS Headset Earphone</a
+                                >
+                                <br />
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span
+                                  class="text-warning mdi mdi-star-half"
+                                ></span>
+                              </p>
+                            </td>
+                            <td>PCS</td>
+                            <td>04/09/2018</td>
+                            <td>Nu.1000/-</td>
+
+                            <td>524</td>
+                            <td>
+                              <span class="badge bg-danger">Deactive</span>
+                            </td>
+
+                            <td class="table-action">
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-eye"></i
+                              ></a>
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-square-edit-outline"></i
+                              ></a>
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-delete"></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <input
+                                  type="checkbox"
+                                  class="form-check-input"
+                                  id="customCheck13"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="customCheck13"
+                                  >&nbsp;</label
+                                >
+                              </div>
+                            </td>
+                            <td>
+                              <img
+                                src="last.jpg"
+                                alt="contact-img"
+                                title="contact-img"
+                                class="rounded me-3"
+                                height="48"
+                              />
+                              <p
+                                class="m-0 d-inline-block align-middle font-16"
+                              >
+                                <a
+                                  href="apps-ecommerce-products-details.html"
+                                  class="text-body"
+                                  >Panasonic RZ-S500WE-K</a
+                                >
+                                <br />
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span class="text-warning mdi mdi-star"></span>
+                                <span
+                                  class="text-warning mdi mdi-star-half"
+                                ></span>
+                              </p>
+                            </td>
+                            <td>Panasonic</td>
+                            <td>03/24/2018</td>
+                            <td>Nu.3,000/-</td>
+
+                            <td>204</td>
+                            <td>
+                              <span class="badge bg-danger">Deactive</span>
+                            </td>
+
+                            <td class="table-action">
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-eye"></i
+                              ></a>
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-square-edit-outline"></i
+                              ></a>
+                              <a href="javascript:void(0);" class="action-icon">
+                                <i class="mdi mdi-delete"></i
+                              ></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <!-- end card-body-->
+                </div>
+                <!-- end card-->
+              </div>
+              <!-- end col -->
+            </div>
+            <!-- end row -->
+          </div>
+          <!-- container -->
+        </div>
+        <!-- content -->
+
+        <!-- Footer Start -->
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                © Hyper
+              </div>
+              <div class="col-md-6">
+                <div class="text-md-end footer-links d-none d-md-block">
+                  <a href="javascript: void(0);">About</a>
+                  <a href="javascript: void(0);">Contact Us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- end Footer -->
+      </div>
+      <!-- End Page content -->
+    </div>
+    <!-- END wrapper -->
+
+    <!-- Right Sidebar -->
+    <div class="end-bar">
+      <div class="rightbar-title">
+        <a href="javascript:void(0);" class="end-bar-toggle float-end">
+          <i class="dripicons-cross noti-icon"></i>
+        </a>
+        <h5 class="m-0">Settings</h5>
+      </div>
+
+      <div class="rightbar-content h-100" data-simplebar="">
+        <div class="p-3">
+          <div class="alert alert-warning" role="alert">
+            <strong>Customize </strong> the overall color scheme, sidebar menu,
+            etc.
+          </div>
+
+          <!-- Settings -->
+          <h5 class="mt-3">Color Scheme</h5>
+          <hr class="mt-1" />
+
+          <div class="form-check form-switch mb-1">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="color-scheme-mode"
+              value="light"
+              id="light-mode-check"
+              checked=""
+            />
+            <label class="form-check-label" for="light-mode-check"
+              >Light Mode</label
+            >
+          </div>
+
+          <div class="form-check form-switch mb-1">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="color-scheme-mode"
+              value="dark"
+              id="dark-mode-check"
+            />
+            <label class="form-check-label" for="dark-mode-check"
+              >Dark Mode</label
+            >
+          </div>
+
+          <!-- Width -->
+          <h5 class="mt-4">Width</h5>
+          <hr class="mt-1" />
+          <div class="form-check form-switch mb-1">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="width"
+              value="fluid"
+              id="fluid-check"
+              checked=""
+            />
+            <label class="form-check-label" for="fluid-check">Fluid</label>
+          </div>
+
+          <div class="form-check form-switch mb-1">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="width"
+              value="boxed"
+              id="boxed-check"
+            />
+            <label class="form-check-label" for="boxed-check">Boxed</label>
+          </div>
+
+          <!-- Left Sidebar-->
+          <h5 class="mt-4">Left Sidebar</h5>
+          <hr class="mt-1" />
+          <div class="form-check form-switch mb-1">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="theme"
+              value="default"
+              id="default-check"
+            />
+            <label class="form-check-label" for="default-check">Default</label>
+          </div>
+
+          <div class="form-check form-switch mb-1">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="theme"
+              value="light"
+              id="light-check"
+              checked=""
+            />
+            <label class="form-check-label" for="light-check">Light</label>
+          </div>
+
+          <div class="form-check form-switch mb-3">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="theme"
+              value="dark"
+              id="dark-check"
+            />
+            <label class="form-check-label" for="dark-check">Dark</label>
+          </div>
+
+          <div class="form-check form-switch mb-1">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="compact"
+              value="fixed"
+              id="fixed-check"
+              checked=""
+            />
+            <label class="form-check-label" for="fixed-check">Fixed</label>
+          </div>
+
+          <div class="form-check form-switch mb-1">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="compact"
+              value="condensed"
+              id="condensed-check"
+            />
+            <label class="form-check-label" for="condensed-check"
+              >Condensed</label
+            >
+          </div>
+
+          <div class="form-check form-switch mb-1">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="compact"
+              value="scrollable"
+              id="scrollable-check"
+            />
+            <label class="form-check-label" for="scrollable-check"
+              >Scrollable</label
+            >
+          </div>
+
+          <div class="d-grid mt-4">
+            <button class="btn btn-primary" id="resetBtn">
+              Reset to Default
+            </button>
+          </div>
+        </div>
+        <!-- end padding-->
+      </div>
+    </div>
+
+    <div class="rightbar-overlay"></div>
+    <!-- /End-bar -->
+
+    <!-- bundle -->
+    <script src="assets/js/vendor.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+
+    <!-- third party js -->
+    <script src="assets/js/vendor/jquery.dataTables.min.js"></script>
+    <script src="assets/js/vendor/dataTables.bootstrap5.js"></script>
+    <script src="assets/js/vendor/dataTables.responsive.min.js"></script>
+    <script src="assets/js/vendor/responsive.bootstrap5.min.js"></script>
+    <script src="assets/js/vendor/dataTables.checkboxes.min.js"></script>
+
+    <!-- third party js ends -->
+
+    <!-- demo app -->
+    <script src="assets/js/pages/demo.products.js"></script>
+    <!-- end demo js-->
+  </body>
+</html>
